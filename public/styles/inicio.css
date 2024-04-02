@@ -1,0 +1,147 @@
+
+.carousel-inner img{
+    width: 100%;
+    max-height: 500px;
+}
+
+/*Estilos Panel Administrativo*/
+
+.navPanelAdmin{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 200;
+}
+
+.btn-secondary{
+    background-color: #F0F0F0 !important;
+}
+.btn-secondary:hover{
+    background-color: #D9D9D9 !important;
+}
+.btn{
+    border: none !important;
+}
+.contenedor{
+    margin-left: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.menuLateral{
+    width: 80px;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top:0;
+    left: 0;
+    font-size: 10px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 5px solid black;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Ocultar scroll para chore, safari, y opera */
+.menuLateral::-webkit-scrollbar{
+    display:none;
+}
+
+/* Ocultar scroll para IE, Edge, y Firefox */
+
+.menuLateral{
+    -ms-text-overflow-style:none;
+    scrollbar-width: none;
+}
+
+.linea{
+    height: 2px;
+    background-color: white;
+}
+
+.logo img{
+    width: 100px;
+    display: flex;
+
+}
+
+.opciones_menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 70px;
+}
+
+.opciones_menu a{
+    display: block;
+    position: relative;
+}
+
+.opciones_menu .opcion{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.opciones_menu .opcion i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.opciones_menu .opcion h4{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.subMenu{
+    font-weight: 400;
+}
+
+.avatar{
+    max-width: 35px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+#content{
+    overflow: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+/* Clases para usar en Javascript */
+
+.contenedor_move{
+    margin-left: 250px;
+}
+
+.menuLateral_move{
+    width: 250px;
+}
+
+@media screen and (max-width:760px){
+    .contenedor_move{
+        margin-left: 0px;
+    }
+
+    .menuLateral_move{
+        width: 80px;
+        left: -80px;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:991px){
+    .logo img{
+        display: none;
+    }
+
+}
+

@@ -1,0 +1,29 @@
+.gallery{
+	padding: 80px 0mx;
+}
+img{
+	max-width: 100%;
+}
+.gallery img{
+	background: #000000;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-popup .modal-img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
