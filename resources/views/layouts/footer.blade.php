@@ -1,21 +1,22 @@
 <footer class="text-white text-center text-lg-start"  style="background-color: rgba(0, 0, 0, 0.37);">
-    <link rel="stylesheet" href="{{ asset("/public/styles/footer.css") }}">
+    <link rel="stylesheet" href="{{ asset("styles/footer.css") }}">
     <div class="container p-1">
         <div class="row mt-4">
             <h5 class="text text-center fs-2 mb-5">Contáctanos</h5>
             <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-    
-                <ul class="fa-ul" style="margin-left: 1.65em;">
-                    <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">Correo electrónico: ejemplo@ejemplo.com</span>
+                <ul class="fa-ul" style="margin-left: 1.65em;"> 
+                    <li class="mb-3">                    <!-- correo al que se dirige -->
+                        <span class="fa-li"></span><a href="mailto: ejemplo@gmail.com" target="_blank"><i class="fas fa-envelope"></i><span class="ms-2">Correo electrónico: ejemplo@ejemplo.com</span></a>
                     </li>
-                    <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">Teléfono: 123-456-7890</span>
+
+                    <li class="mb-3">                    <!-- número al que se dirige -->
+                        <span class="fa-li"></span><a href="https://wa.me/3104428915" target="_blank"><i class="fab fa-whatsapp"></i><span class="ms-2">Whatsapp: 3104428915</span></a>
                     </li>
-                    <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><span class="ms-2">Dirección: 123 Calle Ejemplo, Ciudad Ejemplo, Estado Ejemplo.</span>
+                
+                    <li class="mb-3" >                                <!-- dirección a la que se dirige  -->
+                        <span class="fa-li"></span><a href="https://www.google.com/maps?q=6.138466,-75.264847" target="_blank"><i class="fas fa-map-marker-alt"></i><span class="ms-2">Direccion: CALL#, Ciudad.</span></a>
                     </li>
-                </ul>
+                </ul>  
             </div>
 
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -51,22 +52,22 @@
                     <div class="border-bottom border-warning mb-3 mt-5">
 
                         <!-- Facebook -->
-                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating btn-social rounded-circle m-1 mb-3" href="#!" role="button"
                             ><i class="fab fa-facebook-f"></i>
                         </a>
 
                         <!-- Youtube -->
-                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
-                            ><i class="fab fa-youtube"></i>
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="https://www.youtube.com/watch?v=3e1IsZJuYAw&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF" role="button"
+                        target="_blank"><i class="fab fa-youtube"></i>
                         </a>
 
                         <!-- Instagram -->
-                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
                             ><i class="fab fa-instagram"></i>
                         </a>
 
                         <!-- Twitter -->
-                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
                             ><i class="fab fa-twitter"></i>
                         </a>
                     </div>

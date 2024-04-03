@@ -56,7 +56,7 @@
     <section class="section">
         <div id="carouselExampleInterval" class="carousel slide w-100 h-100 col-sm-12 col-md-8 col-lg-6 mx-auto" data-bs-ride="carousel">
            <div class="carousel-inner">
-            <div id="player" class="carousel-item active" style="height: 600px;" data-bs-interval="7000">
+            <div id="player" class="carousel-item active" data-bs-interval="7000">
                 <iframe width="1920" height="800" src="https://www.youtube.com/embed/kCsxgz-odeo?autoplay=1" title="TURISMO SAN CARLOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
               <div class="carousel-item" data-bs-interval="7000">
@@ -85,7 +85,7 @@
      
 
 
-        <!-- description -->
+        <!-- description -->                                     <!-- aca esta lo que busco jajaj --> 
 
         <div class="section mt-5">
             <div class="container p-1">

@@ -19,7 +19,7 @@
                             <h4>Tienda</h4>
                         </div>
                     </a>
-                      <div class="collapse" id="collapseExample">
+                    <div class="collapse" id="collapseExample">
                         <div class="card card-body bg-black">
                             <ul class="style-none">
                                 <li class=""> <a href="" class="text-white text-decoration-none  fs-5 subMenu">Productos</a></li>
@@ -28,15 +28,15 @@
                                 <li><hr class="linea"></li>
                             </ul>
                         </div>
-                      </div>
+                    </div>
 
-                      <a class="text-decoration-none text-white" data-bs-toggle="collapse" href="#collapseGaleria" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="text-decoration-none text-white" data-bs-toggle="collapse" href="#collapseGaleria" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <div class="opcion">
                             <i class="fa-solid fa-photo-film lead" title="Tienda"></i>
                             <h4>Galería</h4>
                         </div>
                     </a>
-                      <div class="collapse" id="collapseGaleria">
+                        <div class="collapse" id="collapseGaleria">
                         <div class="card card-body bg-black">
                             <ul class="style-none">
                                 <li class=""> <a href="{{ route('admin.files.index') }}" class="text-white text-decoration-none  fs-5 subMenu">Multimedia</a></li>
@@ -45,7 +45,7 @@
                                 <li><hr class="linea"></li>
                             </ul>
                         </div>
-                      </div>
+                        </div>
 
                 </div>
         </div>
@@ -87,4 +87,4 @@
                                 </div>
                             </div>
                         </div>
-                   </nav>
+                    </nav>

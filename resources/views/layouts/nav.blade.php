@@ -95,7 +95,7 @@
                         <li><a class="dropdown-item" href="{{ route('signOut')}}">Cerrar sesión <i class="fa-solid fa-right-from-bracket mx-1 text-white"></i></a></li>
                     </ul>
                 </div>
-               <p>Bienvenido {{  Auth::user()->email }}</p>
+            <p>Bienvenido {{  Auth::user()->email }}</p>
             </div>
             @else
             <div class="col-3">

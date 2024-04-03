@@ -24,7 +24,6 @@
 background-attachment:fixed; background-size:cover;">
 
     <!-- header -->
-   
 
     <!-- body -->
     @yield('content')

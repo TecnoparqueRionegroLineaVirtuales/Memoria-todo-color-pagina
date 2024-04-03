@@ -31,7 +31,7 @@ class MenuSeeder extends Seeder
         
         $rutaCultural = new Menu();
         $rutaCultural->title = "Ruta cultural";
-        $rutaCultural->route = "index";
+        $rutaCultural->route = "cultualRoute";
         $rutaCultural->state_id = 1; 
         $rutaCultural->menu_type_id = 1;
         $rutaCultural->save();

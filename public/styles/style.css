@@ -1,6 +1,14 @@
+/* img del inicio*/
 .carousel-inner img {
     width: 5%;
     max-height: 50px;
+    margin-top: 10vh;
+}
+
+/* el video del inicio*/
+#player{
+    height: 600px; 
+    margin-top: 10vh;
 }
 
 .hit-the-floor {
@@ -16,7 +24,7 @@
 }
 
 .hit-the-floor {
-    text-align: center;
+text-align: center;
 }
 
 @keyframes mover-izquierda-derecha {
