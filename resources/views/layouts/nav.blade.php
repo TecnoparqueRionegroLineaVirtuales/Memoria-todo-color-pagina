@@ -1,4 +1,4 @@
-{{-- <section class="section">
+<!-- {{-- <section class="section">
     <div class="w-100" style="z-index: 1;">
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid fw-bold fs-5" style="background-color: rgba(0, 0, 0, 0);">
@@ -46,20 +46,16 @@
             </div>
         </nav>
     </div>
-</section>   --}}
-
-
-
-
+</section>   --}} -->
 
 
 <div class="w-100" style="z-index: 1;">
     <div style="width: 100%; height: 7rem; position: absolute;">
         <img class="w-100 h-100 object-fit-cover" src="{{ URL::asset('storage/img/fondo.png') }}">
     </div>
-    <nav class="navbar navbar-expand-xl">
+    <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container-fluid fw-bold fs-5" style="background-color: rgba(0, 0, 0, 0);">
-            <div class="col-2 d-flex" style="height: 6.5rem;">
+            <div class="col-2 d-flex" style="height: 3.5rem;">
                 <a class="navbar-brand " href="{{ route('inicio') }}">
                     <img src="{{ URL::asset('storage/img/logo.png') }}" class="mx-5 w-100 h-100 object-fit-scale">
                 </a>
@@ -103,9 +99,20 @@
             </div>
             @else
             <div class="col-3">
-                <a class="btn border border-white text-white" href="{{ route('login') }}">Ingresar</a>
+                <a class="btn border border-white text-white mx-4" href="{{ route('login') }}">Ingresar</a>
             </div>
             @endif
         </div>
     </nav>
 </div>
+
+<script>
+    window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('nav');
+    if (window.scrollY > 100) {
+        navbar.classList.add('scrolling-active');
+    } else {
+        navbar.classList.remove('scrolling-active');
+    }
+});
+</script>
