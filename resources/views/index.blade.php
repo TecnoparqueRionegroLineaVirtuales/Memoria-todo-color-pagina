@@ -7,6 +7,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url('styles/index.css') }}"> 
+    <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 </head>
 <body>
     <div class="w-100 h-100">
-        <img class="position-absolute m-3" style="z-index: 1; width: 200px;" src="{{ URL::asset('storage/img/logo.png') }}">
+        <!-- <img class="position-absolute m-3" style="z-index: 1; width: 200px;" src="{{ URL::asset('storage/img/logo.png') }}"> -->
         <img class="position-absolute img-fluid w-100 h-100 object-fit-fill" src="{{ URL::asset('storage/img/mask.png') }}">
         <img class="position-absolute img-fluid w-100 h-100 object-fit-cover" style="z-index: -1;" src="{{ URL::asset('storage/img/background.jpg') }}">
 
