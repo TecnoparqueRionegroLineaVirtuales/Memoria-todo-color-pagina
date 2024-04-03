@@ -1,4 +1,5 @@
 <footer class="text-white text-center text-lg-start"  style="background-color: rgba(0, 0, 0, 0.37);">
+    <link rel="stylesheet" href="{{ asset("/public/styles/footer.css") }}">
     <div class="container p-1">
         <div class="row mt-4">
             <h5 class="text text-center fs-2 mb-5">Contáctanos</h5>
@@ -51,22 +52,22 @@
 
                         <!-- Facebook -->
                         <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
-                        style="width: 5%;"><i class="fab fa-facebook-f"></i>
+                            ><i class="fab fa-facebook-f"></i>
                         </a>
 
                         <!-- Youtube -->
                         <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
-                            style="width: 5%;"><i class="fab fa-youtube"></i>
+                            ><i class="fab fa-youtube"></i>
                         </a>
 
                         <!-- Instagram -->
                         <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
-                            style="width: 5%;"><i class="fab fa-instagram"></i>
+                            ><i class="fab fa-instagram"></i>
                         </a>
 
                         <!-- Twitter -->
                         <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
-                            style="width: 5%;"><i class="fab fa-twitter"></i>
+                            ><i class="fab fa-twitter"></i>
                         </a>
                     </div>
                 </section>
