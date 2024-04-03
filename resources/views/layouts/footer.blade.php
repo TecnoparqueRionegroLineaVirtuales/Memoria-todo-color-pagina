@@ -50,22 +50,22 @@
                     <div class="border-bottom border-warning mb-3 mt-5">
 
                         <!-- Facebook -->
-                        <a class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
+                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
                         style="width: 5%;"><i class="fab fa-facebook-f"></i>
                         </a>
 
                         <!-- Youtube -->
-                        <a class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
+                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
                             style="width: 5%;"><i class="fab fa-youtube"></i>
                         </a>
 
                         <!-- Instagram -->
-                        <a class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
+                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
                             style="width: 5%;"><i class="fab fa-instagram"></i>
                         </a>
 
                         <!-- Twitter -->
-                        <a class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
+                        <a class="btn btn-primary btn-outline-light btn-floating m-1 mb-3" href="#!" role="button"
                             style="width: 5%;"><i class="fab fa-twitter"></i>
                         </a>
                     </div>
