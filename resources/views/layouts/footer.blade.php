@@ -52,22 +52,22 @@
                     <div class="border-bottom border-warning mb-3 mt-5">
 
                         <!-- Facebook -->
-                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating btn-social rounded-circle m-1 mb-3" href="#!" role="button"
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating btn-social rounded-circle m-1 mb-3" href="https://web.facebook.com/san.carlos.54922169" target="_blank" role="button"
                             ><i class="fab fa-facebook-f"></i>
                         </a>
 
                         <!-- Youtube -->
-                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="https://www.youtube.com/watch?v=3e1IsZJuYAw&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF" role="button"
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="https://youtu.be/6VeGS9KTum4?si=BaF6a_rEJrZqJA5e" target="_blank" role="button"
                         target="_blank"><i class="fab fa-youtube"></i>
                         </a>
 
                         <!-- Instagram -->
-                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="https://www.instagram.com/sancarlos_antioquia_?igsh=djJqcTVqZmZtMTB6" target="_blank" role="button"
                             ><i class="fab fa-instagram"></i>
                         </a>
 
                         <!-- Twitter -->
-                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" href="#!" role="button"
+                        <a id="enlaces" class="btn btn-primary btn-outline-light btn-floating rounded-circle m-1 mb-3" target="_blank" href="https://play.google.com/store/apps/details?id=com.twitter.android&hl=es_419&gl=US" role="button"
                             ><i class="fab fa-twitter"></i>
                         </a>
                     </div>
