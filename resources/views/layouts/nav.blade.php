@@ -50,7 +50,7 @@
 
 
 <div class="w-100" style="z-index: 1;">
-    <div style="width: 100%; height: 7rem; position: absolute;">
+    <div style="width: 100%; height: 7rem; position: relative;">
         <img class="w-100 h-100 object-fit-cover" src="{{ URL::asset('storage/img/fondo.png') }}">
     </div>
     <nav class="navbar navbar-expand-xl fixed-top">
