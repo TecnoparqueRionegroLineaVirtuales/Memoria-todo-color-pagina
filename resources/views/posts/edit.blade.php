@@ -1,19 +1,17 @@
-@extends('layouts.templateAdmin')  {{-- Cambio de template a templateAdmin --}}
+@extends('layouts.templateAdmin') 
 
 @section('title', 'Editar Ruta')
 
 @section('content')
 <div class="contenedor" id="contenedor">
     <div class="d-flex">
-        {{-- Menú Lateral --}}
         <div class="menuLateral" id="menuLateral">
-            <header>@include('layouts.navAdmin')</header>  {{-- Inclusión de navAdmin --}}
+            <header>@include('layouts.navAdmin')</header>
 
-            {{-- Aquí va el contenido a mostrar en la página --}}
             <div id="content">
                 <section class="py-5">
                     <div class="container d-flex justify-content-end w-75 mb-4">
-                        <a href="{{route('posts.inicio')}}" class="btn btn-dark">Volver a la lista</a>  {{-- Botón para volver, estilizado como en admin --}}
+                        <a href="{{route('posts.inicio')}}" class="btn btn-dark">Volver a la lista</a>
                     </div>
 
                     <div class="container d-flex justify-content-center">
@@ -43,11 +41,11 @@
                                         <input type="file" class="form-control" id="image" name="image">
                                         @if ($post->image)
                                             <div>
-                                                <img src="{{ asset($post->image) }}" alt="Imagen actual" style="max-width: 100%; margin-top: 10px;">
+                                                <img src="{{ asset('storage/' . $post->image) }}" alt="Imagen de la ruta cultural" style="max-width: 50%; height: auto;">
                                             </div>
                                         @endif
                                     </div>
-                                    <button type="submit" class="btn btn-dark">Actualizar</button>  {{-- Botón estilizado como en admin --}}
+                                    <button type="submit" class="btn btn-dark">Actualizar</button>
                                 </form>
                             </div>
                         </div>

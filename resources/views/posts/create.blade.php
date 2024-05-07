@@ -1,4 +1,4 @@
-@extends('layouts.templateAdmin')  {{-- Cambio de template a templateAdmin --}}
+@extends('layouts.templateAdmin') 
 
 @section('title', 'Crear Ruta')
 
@@ -7,9 +7,8 @@
     <div class="d-flex">
         {{-- Menú Lateral --}}
         <div class="menuLateral" id="menuLateral">
-            <header>@include('layouts.navAdmin')</header>  {{-- Inclusión de navAdmin --}}
+            <header>@include('layouts.navAdmin')</header> 
 
-            {{-- Aquí va el contenido a mostrar en la pagina --}}
             <div id="content">
                 <section class="py-5">
                     <div class="container d-flex justify-content-end w-75 mb-4">

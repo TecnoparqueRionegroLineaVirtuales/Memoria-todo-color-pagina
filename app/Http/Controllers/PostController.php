@@ -8,11 +8,10 @@ use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
-    // Método para mostrar la vista de inicio con todos los posts
     public function index()
     {
         $posts = Post::all();
-        return view('index', compact('posts')); // Asegúrate que la vista se llame 'index.blade.php'
+        return view('index', compact('posts'));
     }
 
     public function inicio()
@@ -69,10 +68,6 @@ class PostController extends Controller
             'image' => 'image|nullable',
         ]);
 
-        $post->title = $request->title;
-        $post->description = $request->description;
-        $post->phone = $request->phone;
-
         if ($request->hasFile('image')) {
             if ($post->image) {
                 Storage::delete('public/' . $post->image);
@@ -81,6 +76,9 @@ class PostController extends Controller
             $post->image = $imageName;
         }
 
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->phone = $request->phone;
         $post->save();
 
         return redirect()->route('posts.inicio')->with('success', 'Post actualizado con éxito.');
@@ -93,5 +91,12 @@ class PostController extends Controller
         }
         $post->delete();
         return redirect()->route('posts.inicio')->with('success', 'Post eliminado con éxito.');
+    }
+
+    // Método nuevo para mostrar todas las rutas
+    public function allRoutes()
+    {
+        $posts = Post::all();
+        return view('posts.allRoutes', compact('posts'));
     }
 }

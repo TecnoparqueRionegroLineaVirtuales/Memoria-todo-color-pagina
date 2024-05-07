@@ -188,3 +188,5 @@ Route::get('/rutaCultural/{post}', [PostController::class, 'show'])->name('rutaC
 Route::get('/rutaCultural/{post}/edit', [PostController::class, 'edit'])->name('rutaCultural.edit');
 Route::put('/rutaCultural/{post}', [PostController::class, 'update'])->name('rutaCultural.update');
 Route::delete('/rutaCultural/{post}', [PostController::class, 'destroy'])->name('rutaCultural.destroy');
+
+Route::get('/all-routes', [PostController::class, 'allRoutes'])->name('allRoutes');
