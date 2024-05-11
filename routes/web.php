@@ -18,6 +18,8 @@ use App\Http\Controllers\UserProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaidController;
 
+use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -174,3 +176,17 @@ Route::get('inicio', function () {
 
 Route::get('user/{user}/edit', [UserProfileController::class, 'edit'])->name('user_profile.edit');
 Route::put('user/{user}', [UserProfileController::class, 'update'])->name('user_profile.update');
+
+
+// Rutas para 'rutaCultural'
+Route::get('/posts/inicio', [PostController::class, 'inicio'])->name('posts.inicio');
+
+Route::get('/rutaCultural', [PostController::class, 'index'])->name('rutaCultural.inicio');
+Route::get('/rutaCultural/create', [PostController::class, 'create'])->name('rutaCultural.create');
+Route::post('/rutaCultural', [PostController::class, 'store'])->name('rutaCultural.store');
+Route::get('/rutaCultural/{post}', [PostController::class, 'show'])->name('rutaCultural.show');
+Route::get('/rutaCultural/{post}/edit', [PostController::class, 'edit'])->name('rutaCultural.edit');
+Route::put('/rutaCultural/{post}', [PostController::class, 'update'])->name('rutaCultural.update');
+Route::delete('/rutaCultural/{post}', [PostController::class, 'destroy'])->name('rutaCultural.destroy');
+
+Route::get('/all-routes', [PostController::class, 'allRoutes'])->name('allRoutes');
