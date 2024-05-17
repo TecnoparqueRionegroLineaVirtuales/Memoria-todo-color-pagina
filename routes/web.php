@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaidController;
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PersonalizedOrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -190,3 +191,12 @@ Route::put('/rutaCultural/{post}', [PostController::class, 'update'])->name('rut
 Route::delete('/rutaCultural/{post}', [PostController::class, 'destroy'])->name('rutaCultural.destroy');
 
 Route::get('/all-routes', [PostController::class, 'allRoutes'])->name('allRoutes');
+
+
+use App\Http\Controllers\PersonalizedSaleController;
+
+// Ruta para mostrar el formulario con datos
+Route::get('/personalizedSale', [PersonalizedSaleController::class, 'create'])->name('personalizedSaleCreate');
+
+// Ruta para procesar el formulario
+Route::post('/personalizedSale', [PersonalizedSaleController::class, 'store'])->name('personalizedSaleStore');

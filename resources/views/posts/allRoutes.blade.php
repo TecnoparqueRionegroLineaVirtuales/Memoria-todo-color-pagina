@@ -1,6 +1,6 @@
 @extends('layouts.template')  
 @include('layouts.nav')
-@section('title', 'Rutas con Imágenes')
+@section('title', 'Rutas')
 
 @section('content')
 <div class="container p-2 mb-4">
