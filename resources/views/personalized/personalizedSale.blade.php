@@ -1,4 +1,4 @@
-@extends('layouts.template')  
+@extends('layouts.template')
 @include('layouts.nav')
 @section('title', 'Rutas')
 @section('content')

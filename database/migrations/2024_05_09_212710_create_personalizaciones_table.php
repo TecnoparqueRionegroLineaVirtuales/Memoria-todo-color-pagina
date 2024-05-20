@@ -6,9 +6,16 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePersonalizacionesTable extends Migration
 {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function up()
     {
         Schema::create('personalizaciones', function (Blueprint $table) {
+            $table->engine = "InnoDB";
+
             $table->id();
             $table->unsignedBigInteger('artista_id');
             $table->unsignedBigInteger('mural_id');
@@ -17,12 +24,17 @@ class CreatePersonalizacionesTable extends Migration
             $table->text('datos_contacto');
             $table->timestamps();
 
-            $table->foreign('artista_id')->references('id')->on('artistas');
-            $table->foreign('mural_id')->references('id')->on('murales');
-            $table->foreign('producto_id')->references('id')->on('productos');
+            $table->foreign('artista_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('mural_id')->references('id')->on('files')->onDelete('cascade');
+            $table->foreign('producto_id')->references('id')->on('products')->onDelete('cascade');
         });
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::dropIfExists('personalizaciones');

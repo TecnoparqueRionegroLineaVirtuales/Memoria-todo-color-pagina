@@ -11,15 +11,24 @@ class File extends Model
 
     protected $fillable = ['name', 'route', 'category_file_id', 'file_type_id', 'state_id'];
 
-    public function fileTypes(){
+    public function fileType()
+    {
         return $this->belongsTo(FileType::class, 'file_type_id');
     }
 
-    public function categories(){
+    public function category()
+    {
         return $this->belongsTo(CategoryFile::class, 'category_file_id');
     }
 
-    public function states(){
+    public function state()
+    {
         return $this->belongsTo(State::class, 'state_id');
     }
+
+        // Relación con el usuario (artista)
+        public function user()
+        {
+            return $this->belongsTo(User::class);
+        }
 }

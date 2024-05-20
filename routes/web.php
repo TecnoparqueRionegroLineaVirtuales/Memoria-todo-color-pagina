@@ -182,7 +182,7 @@ Route::put('user/{user}', [UserProfileController::class, 'update'])->name('user_
 // Rutas para 'rutaCultural'
 Route::get('/posts/inicio', [PostController::class, 'inicio'])->name('posts.inicio');
 
-Route::get('/rutaCultural', [PostController::class, 'index'])->name('rutaCultural.inicio');
+//Route::get('/rutaCultural', [PostController::class, 'index'])->name('rutaCultural.inicio');
 Route::get('/rutaCultural/create', [PostController::class, 'create'])->name('rutaCultural.create');
 Route::post('/rutaCultural', [PostController::class, 'store'])->name('rutaCultural.store');
 Route::get('/rutaCultural/{post}', [PostController::class, 'show'])->name('rutaCultural.show');
@@ -190,13 +190,16 @@ Route::get('/rutaCultural/{post}/edit', [PostController::class, 'edit'])->name('
 Route::put('/rutaCultural/{post}', [PostController::class, 'update'])->name('rutaCultural.update');
 Route::delete('/rutaCultural/{post}', [PostController::class, 'destroy'])->name('rutaCultural.destroy');
 
-Route::get('/all-routes', [PostController::class, 'allRoutes'])->name('allRoutes');
+Route::get('/all-routes', [PostController::class, 'allRoutes'])->name('allRoutess');
 
 
 use App\Http\Controllers\PersonalizedSaleController;
 
 // Ruta para mostrar el formulario con datos
-Route::get('/personalizedSale', [PersonalizedSaleController::class, 'create'])->name('personalizedSaleCreate');
+//Route::get('/personalizedSale', [PersonalizedSaleController::class, 'create'])->name('personalizedSaleCreate');
 
 // Ruta para procesar el formulario
-Route::post('/personalizedSale', [PersonalizedSaleController::class, 'store'])->name('personalizedSaleStore');
+//Route::post('/personalizedSale', [PersonalizedSaleController::class, 'store'])->name('personalizedSaleStore');
+
+Route::get('/personalized-sale', [PersonalizedSaleController::class, 'create'])->name('personalizedSaleCreate');
+Route::post('/personalized-sale/store', [PersonalizedSaleController::class, 'store'])->name('personalizedSaleStore');

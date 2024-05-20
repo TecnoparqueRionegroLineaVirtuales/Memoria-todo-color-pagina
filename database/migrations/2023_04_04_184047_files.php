@@ -26,6 +26,7 @@ return new class extends Migration
             $table->foreign('category_file_id')->references('id')->on('category_files')->onDelete('cascade');
             $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
             $table->foreign('file_type_id')->references('id')->on('file_types')->onDelete('cascade');
+            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
