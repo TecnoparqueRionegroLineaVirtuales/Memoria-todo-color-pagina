@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePersonalizacionesTable extends Migration
+class CreatePersonalizacionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePersonalizacionesTable extends Migration
      */
     public function up()
     {
-        Schema::create('personalizaciones', function (Blueprint $table) {
+        Schema::create('personalizacions', function (Blueprint $table) {
             $table->engine = "InnoDB";
 
             $table->id();
