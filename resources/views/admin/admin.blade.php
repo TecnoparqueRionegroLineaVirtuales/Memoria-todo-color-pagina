@@ -113,6 +113,22 @@
                             </div>
                         </div>
                     </div>
+                   {{-- Panel para Productos Personalizables --}}
+                   <div class="col-lg-3 col-md-6">
+                    <div class="card shadow border-0 mb-4">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Productos Personalizables</h6>
+                                <i class="fa-solid fa-puzzle-piece lead"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a class="btn btn-secondary w-100 text-black" href="{{ route('personalized.list_products') }}">
+                                Administrar Productos personalizables<i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 </section>
             </div>
         </div>

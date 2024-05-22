@@ -203,3 +203,14 @@ use App\Http\Controllers\PersonalizedSaleController;
 
 Route::get('/personalized-sale', [PersonalizedSaleController::class, 'create'])->name('personalizedSaleCreate');
 Route::post('/personalized-sale/store', [PersonalizedSaleController::class, 'store'])->name('personalizedSaleStore');
+
+// Ruta para mostrar el formulario de creación de productos personalizables
+Route::get('/personalized/create_product', [PersonalizedSaleController::class, 'showCreateProductForm'])->name('personalized.create_product');
+
+// Ruta para manejar el almacenamiento de un nuevo producto personalizable
+Route::post('/personalized/store_product', [PersonalizedSaleController::class, 'storeProduct'])->name('personalized.store_product');
+
+Route::get('/personalized/products', [PersonalizedSaleController::class, 'listProducts'])->name('personalized.list_products');
+Route::get('/personalized/products/edit/{id}', [PersonalizedSaleController::class, 'editProduct'])->name('personalized.edit_product');
+Route::put('/personalized/products/update/{id}', [PersonalizedSaleController::class, 'updateProduct'])->name('personalized.update_product');
+Route::delete('/personalized/products/delete/{id}', [PersonalizedSaleController::class, 'deleteProduct'])->name('personalized.delete_product');
