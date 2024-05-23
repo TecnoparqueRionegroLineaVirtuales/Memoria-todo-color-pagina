@@ -5,24 +5,24 @@ use App\Models\data_users;
 use App\Models\user_types;
 use Illuminate\Http\Request;
 
-class UserTypesController extends Controller
+class UserTypeController extends Controller
 {
-    
+
     public function index()
     {
        $user_types = user_types::all();
        $user_types = user_types::paginate(10);
         return View('user_types.consult', ['user_types' => $user_types]);
-        
+
     }
 
 
     public function indexUsers()
     {
        $data_users = data_users::all();
-       
+
         return View('user_types.consultaUsuarios', compact('data_users'));
-        
+
     }
 
 
@@ -36,7 +36,7 @@ class UserTypesController extends Controller
         user_types::create([
             'description' => $request->description
         ]);
-        
+
 
         return redirect()->route('user_types')->with('success', 'Rol registrado Correctamente');
     }
@@ -60,12 +60,12 @@ class UserTypesController extends Controller
         return redirect()->route('user_types')->with('success', 'Rol actualizado');
     }
 
-    
-    
+
+
     public function destroy($id){
         $user_types = user_types::findOrFail($id);
         $user_types->delete();
         return redirect()->back()->with('success', 'Categoría eliminada correctamente.');
-        
+
     }
 }

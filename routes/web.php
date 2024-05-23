@@ -8,7 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\DataUsersController;
-use App\Http\Controllers\UserTypesController;
+use App\Http\Controllers\UserTypeController;
 use App\Http\Controllers\CategoryFileController;
 use App\Http\Controllers\CategoryProductsController;
 use App\Http\Controllers\PayController;
@@ -92,17 +92,17 @@ Route::prefix('auth')->group(function(){
 
 // registrar tipo usuario
 Route::prefix('users')->group(function(){
-    Route::get('user_types', [UserTypesController::class, 'index'])->name('user_types');
-    Route::get('user_types_register_form', [UserTypesController::class, 'create'])->name('user_types_register_form');
-    Route::post('user_types_register', [UserTypesController::class, 'store'])->name('user_types_register');
-    Route::get('user_types_consult', [UserTypesController::class, 'consult'])->name('user_types_consult');
-    Route::get('user_types/{id}/Edit', [UserTypesController::class, 'edit'])->name('user_types_edit');
-    Route::put('user_types/{id}', [UserTypesController::class, 'update'])->name('user_types_update');
-    Route::get('data_users_consult', [UserTypesController::class, 'indexUsers'])->name('data_users_consult');
+    Route::get('user_types', [UserTypeController::class, 'index'])->name('user_types');
+    Route::get('user_types_register_form', [UserTypeController::class, 'create'])->name('user_types_register_form');
+    Route::post('user_types_register', [UserTypeController::class, 'store'])->name('user_types_register');
+    Route::get('user_types_consult', [UserTypeController::class, 'consult'])->name('user_types_consult');
+    Route::get('user_types/{id}/Edit', [UserTypeController::class, 'edit'])->name('user_types_edit');
+    Route::put('user_types/{id}', [UserTypeController::class, 'update'])->name('user_types_update');
+    Route::get('data_users_consult', [UserTypeController::class, 'indexUsers'])->name('data_users_consult');
 
     Route::get('data_users/{user}/Edit', [DataUsersController::class, 'editUsers'])->name('data_users_edit');
     Route::put('users/{userId}/data-users/{dataUserId}', [DataUsersController::class, 'updateDataUsers'])->name('update-data-users');
-    Route::post('user_types/{id}', [UserTypesController::class, 'destroy'])->name('user_types_destroy');
+    Route::post('user_types/{id}', [UserTypeController::class, 'destroy'])->name('user_types_destroy');
 });
 
 
