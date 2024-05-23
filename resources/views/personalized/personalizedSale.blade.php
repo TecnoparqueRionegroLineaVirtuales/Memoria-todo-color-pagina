@@ -20,10 +20,10 @@
         <option value="">Selecciona un Mural</option>
     </select>
 
-    <!-- Lista desplegable para seleccionar un producto a personalizar -->
-    <select name="producto_id" required>
-        <option value="">Selecciona un Producto</option>
-        @foreach ($products as $product)
+    <!-- Lista desplegable para seleccionar un producto personalizable -->
+    <select name="customizable_product_id" required>
+        <option value="">Selecciona un Producto Personalizable</option>
+        @foreach ($customizableProducts as $product)
             <option value="{{ $product->id }}">{{ $product->name }}</option>
         @endforeach
     </select>

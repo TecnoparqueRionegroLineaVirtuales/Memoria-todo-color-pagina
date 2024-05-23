@@ -14,40 +14,37 @@ class PersonalizedSaleController extends Controller
     {
         // Cargar artistas que son de tipo 'artista' (user_type_id = 3)
         $artists = User::where('user_type_id', 3)->with('files', 'dataUser')->get();
-
-        // Cargar todos los productos
-        $products = Product::all();
-
+    
+        // Cargar todos los productos personalizables
+        $customizableProducts = CustomizableProduct::all();
+    
         // Retornar la vista con los datos necesarios
         return view('personalized.personalizedSale', [
             'artists' => $artists,
-            'products' => $products
+            'customizableProducts' => $customizableProducts // Asegúrate de pasar los productos personalizables
         ]);
     }
+    
 
     public function store(Request $request)
-    {
-        // Validar los datos del formulario
-        $request->validate([
-            'artista_id' => 'required|exists:users,id',
-            'mural_id' => 'required|exists:files,id',
-            'producto_id' => 'required|exists:products,id',
-            'descripcion' => 'nullable|string',
-            'datos_contacto' => 'required|string'
-        ]);
+{
+    // Validar los datos del formulario
+    $validated = $request->validate([
+        'artista_id' => 'required|exists:users,id',
+        'mural_id' => 'required|exists:files,id',
+        'customizable_product_id' => 'required|exists:customizable_products,id',
+        'descripcion' => 'nullable|string',
+        'datos_contacto' => 'required|string'
+    ]);
 
-        // Crear una nueva personalización con los datos validados
-        Personalizacion::create([
-            'artista_id' => $request->artista_id,
-            'mural_id' => $request->mural_id,
-            'producto_id' => $request->producto_id,
-            'descripcion' => $request->descripcion,
-            'datos_contacto' => $request->datos_contacto
-        ]);
+    dd($validated); // Verificar qué se está recibiendo
 
-        // Redirigir de vuelta con un mensaje de éxito
-        return back()->with('success', 'Tu personalización ha sido creada exitosamente.');
-    }
+    // Si pasa la validación, proceder con la creación
+    $personalizacion = Personalizacion::create($validated);
+    return back()->with('success', 'Tu personalización ha sido creada exitosamente.');
+}
+
+    
 
     // Método para mostrar la vista de creación de producto
     public function showCreateProductForm()
