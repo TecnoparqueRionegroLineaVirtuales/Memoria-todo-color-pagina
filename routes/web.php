@@ -214,3 +214,15 @@ Route::get('/personalized/products', [PersonalizedSaleController::class, 'listPr
 Route::get('/personalized/products/edit/{id}', [PersonalizedSaleController::class, 'editProduct'])->name('personalized.edit_product');
 Route::put('/personalized/products/update/{id}', [PersonalizedSaleController::class, 'updateProduct'])->name('personalized.update_product');
 Route::delete('/personalized/products/delete/{id}', [PersonalizedSaleController::class, 'deleteProduct'])->name('personalized.delete_product');
+
+
+// Rutas para el listado, creación, edición y eliminación de personalizaciones
+Route::get('/personalized', [PersonalizedSaleController::class, 'list'])->name('personalized.list');
+Route::get('/personalized/create', [PersonalizedSaleController::class, 'create'])->name('personalized.create');
+Route::post('/personalized', [PersonalizedSaleController::class, 'store'])->name('personalized.store');
+Route::get('/personalized/{id}/edit', [PersonalizedSaleController::class, 'edit'])->name('personalized.edit');
+Route::put('/personalized/{id}', [PersonalizedSaleController::class, 'update'])->name('personalized.update');
+Route::delete('/personalized/{id}', [PersonalizedSaleController::class, 'destroy'])->name('personalized.destroy');
+
+
+// Asegúrate de que los nombres de los métodos en el controlador coincidan con estos

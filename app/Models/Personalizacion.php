@@ -12,7 +12,7 @@ class Personalizacion extends Model
     protected $fillable = [
         'artista_id',
         'mural_id',
-        'producto_id',
+        'customizable_product_id',
         'descripcion',
         'datos_contacto'
     ];
@@ -29,9 +29,9 @@ class Personalizacion extends Model
         return $this->belongsTo(File::class, 'mural_id');
     }
 
-    // Relación con el producto
+    // Relación con el producto (Actualizada para reflejar el cambio de 'producto_id' a 'customizable_product_id')
     public function producto()
     {
-        return $this->belongsTo(Product::class, 'producto_id');
+        return $this->belongsTo(CustomizableProduct::class, 'customizable_product_id'); // Asegúrate de que la clase referenciada sea correcta
     }
 }

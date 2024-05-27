@@ -16,7 +16,7 @@
                         <div class="card-body">
                             <form action="{{ route('personalized.update_product', $product->id) }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                @method('PUT') <!-- Cambio a método PUT para actualizar -->
+                                @method('PUT')
 
                                 <div>
                                     <label class="form-label">Nombre del Producto:</label>
