@@ -67,6 +67,8 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
                                 <div class="card shadow border-0 mb-4">
                                     <div class="card-header">
                                         <div class="d-flex justify-content-between">
@@ -78,12 +80,12 @@
                                         <a class="btn btn-secondary w-100 text-black" href="{{ route('posts.inicio') }}">
                                             gestionar rutas <i class="fa-solid fa-plus"></i>
                                         </a>
-                                        
+
                                         </a>
                                         <a class="btn btn-secondary w-100 text-black" href="{{ route('rutaCultural.create') }}">
                                             Agregar Ruta <i class="fa-solid fa-plus"></i>
                                         </a>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -107,6 +109,29 @@
                                                     Categoría <i class="fa-solid fa-plus"></i>
                                                 </a>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="card shadow border-0 mb-4">
+                                    <div class="card-header">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="font-weight-bold">Productos personalizados</h6>
+                                            <i class="fa-solid fa-newspaper lead"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="col-lg-12">
+                                            <a class="btn btn-secondary w-100 text-black" href="{{ route('personalized.list_products') }}">
+                                                Administrar productos personalizados <i class="fa-solid fa-puzzle-piece"></i>
+                                            </a>
+                                        </div>
+                                        &nbsp;
+                                        <div class="col-lg-12">
+                                            <a class="btn btn-secondary w-100 text-black" href="{{ route('personalized.list') }}">
+                                                Ventas personalizadas <i class="fa-solid fa-puzzle-piece"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
